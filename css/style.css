@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #fc740c;
+    --primary: #406a8e;
     --light: #F0FBFC;
     --dark: #181d38;
 }
@@ -458,11 +458,11 @@
 
 /* -------------ADDED by rahul ----------------- */
 .btn-primary {
-    background: #fc740c;
-    border-color: #fc740c;
+    background: #406a8e;
+    border-color: #406a8e;
 }
 .text-primary {
-    color: #fc740c !important;
+    color: #406a8e !important;
 }
 
 .sap-logo {
@@ -473,7 +473,7 @@
     white-space: nowrap;
 }
 .btn-primary:hover {
-    background: #fc740c;
+    background: #406a8e;
 }
 .logo-div {
     padding-top: 24px;
@@ -566,7 +566,7 @@
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: #FC740C;
+      background-color: #406a8e;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
@@ -574,7 +574,7 @@
       text-align: center;
     }
     .read-more:hover {
-      background-color: #FC740C;
+      background-color: #406a8e;
     }
 
 @media (max-width: 768px) {

@@ -14,8 +14,8 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                     <a href="tel:+1(720)2611132">
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 (720) 261 1132</p>
                     </a>
-                    <a href="mailto:info@sapficohub.com">
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sapficohub.com</p>
+                    <a href="mailto:info@myerphub.com">
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
                     </a>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sapfico_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -31,8 +31,8 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                     <a href="tel:+919395191219">
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9395191219</p>
                     </a>
-                    <a href="mailto:info@sapficohub.com">
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sapficohub.com</p>
+                    <a href="mailto:info@myerphub.com">
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
                     </a>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sapfico_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -49,8 +49,8 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                     <a href="tel:+919395191219">
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7022170619</p>
                     </a>
-                    <a href="mailto:info@sapficohub.com">
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@sapficohub.com</p>
+                    <a href="mailto:info@myerphub.com">
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
                     </a>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/erp_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -84,7 +84,7 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                 </div>
                 <div class="col-lg-3 col-md-6 d-none">
                     <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Subscribe to the Sap Fico Hub Newsletter</p>
+                    <p>Subscribe to the MyERP HUB Newsletter</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button"
@@ -95,10 +95,10 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
         </div>
         <div class="container">
         <div class="shadow rounded-3 p-4">
-            <strong>Declaration:</strong> SapFicoHub is not an authorized SAP Partner. Any course, training or any other
-            service provided at SapFicoHub are not associated, affiliated, authorized, endorsed by, or in any way
+            <strong>Declaration: </strong> MyERP HUB is not an authorized SAP Partner. Any course, training or any other
+            service provided at MyERP HUB are not associated, affiliated, authorized, endorsed by, or in any way
             officially connected with SAP organization. SAP is a registered trademark of SAP AG in Germany and many
-            other countries. SapFicoHub is NOT associated with the SAP organization. We do not conduct any SAP
+            other countries.MyERP HUB is NOT associated with the SAP organization. We do not conduct any SAP
             Certification training programs.
         </div>
     </div>
@@ -106,11 +106,7 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="https://sapficohub.com/">sapficohub.com</a> All Right Reserved.Designed & Developed With 
-                    <span>&#x2764;</span> 
-                    <a href="https://webbingprotechnologies.com/" style="color:#FBAE18;" target="_blank">Webbing Pro Technologies -</a><a href="tel: +91 9059329297" style="color:#FBAE18;">9059329297</a>
-
-
+                        &copy; <a class="border-bottom" href="https://myerphub.com/">myerphub.com</a> All Right Reserved.
                     </div>
                     
                 </div>

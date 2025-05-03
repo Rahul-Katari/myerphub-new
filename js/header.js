@@ -1,4 +1,4 @@
-const headerHTML = `<div class="border-bottom text-white py-3 pe-md-4 pe-3 px-3 ps-md-0 top-navbar">
+const headerHTML = `<div class="border-bottom text-white py-2 pe-md-4 pe-3 px-3 top-navbar">
         <div class="d-flex justify-content-between align-items-center gap-3">
 
             <!-- Left Section -->
@@ -6,8 +6,7 @@ const headerHTML = `<div class="border-bottom text-white py-3 pe-md-4 pe-3 px-3 
                 <a href="https://maps.app.goo.gl/LAhZpv8omu58pLy79" target="_blank"
                     class="d-md-flex d-none align-items-center"><i
                         class="fa fa-map-marker-alt me-3 text-primary fs-3"></i>
-                    <div> #60C, 2nd Floor, Near Arjun Theater, <br>
-                        Western Hills, KPHB Hyderabad-72</div>
+                    <div class="text-decoration-underline"> #60C, 2nd Floor, KPHB Hyderabad-72</div>
                 </a>
 
                 <!-- Contact Number -->
@@ -24,10 +23,10 @@ const headerHTML = `<div class="border-bottom text-white py-3 pe-md-4 pe-3 px-3 
 
             <!-- Middle Section (Buttons with Blinking Text) -->
             <div class="d-flex gap-3 justify-content-center align-items-center topbtn">
-                <a href="img/SAPFICOContent.pdf" class="btn btn-primary big-btn blink-text" target="_blank" download>
-    Download Course Content Here
+                <a href="img/SAPFICOContent.pdf" class="btn btn-primary big-btn  fs-6" target="_blank" download>
+    Course Content
 </a>
-                <a href="https://youtu.be/ZRLNIkb8osc" class="btn btn-secondary big-btn blink-text" target="_blank">Recorded Demo</a>
+                <a href="https://youtu.be/ZRLNIkb8osc" class="btn btn-secondary big-btn  fs-6" target="_blank">Recorded Demo</a>
             </div>
 
             <!-- Right Section (Social Icons) -->

@@ -65,10 +65,10 @@ function checkModal() {
 
     if (!showModal) {
         setTimeout(function () {
-            addModal();
-            $("#enquire-modal-form").submit(function (event) {
-                handleSubmit(event);
-            });
+            // addModal();
+            // $("#enquire-modal-form").submit(function (event) {
+            //     handleSubmit(event);
+            // });
         }, 10000);
     }
 
