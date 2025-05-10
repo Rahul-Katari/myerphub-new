@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Training Institute - Master ERP Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .highlight-box {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #3b82f6, #10b981);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-gray-100 text-sm py-2 px-4 md:flex hidden justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-1">
+                <a href="tel:9395191219" class="text-black hover:underline font-semibold"><i
+                        class="fas fa-phone pe-2"></i>+91 9395191219</a>
+            </div>
+            <div class="flex items-center space-x-1">
+                <a href="mailto:info@myerphub.com" class="text-black hover:underline font-semibold"><i
+                        class="fas fa-envelope pe-2"></i>info@myerphub.com</a>
+            </div>
+        </div>
+        <div class="space-x-6">
+            <a href="./about.html" class="text-black hover:underline font-semibold">About Us</a>
+            <a href="#" class="text-black hover:underline font-semibold">Support</a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <div class="flex items-center justify-between md:px-4 max-sm:pe-4 py-2 border-b">
+        <!-- Logo -->
+        <a href="./landing.html">
+            <img src="./img/logo.png" alt="MyERP Hub Logo" class="h-16" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8 text-lg flex-wrap justify-center md:justify-start">
+            <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
+            <a href="#" class="hover:text-blue-600 font-semibold">Our Reviews</a>
+            <a href="#" class="hover:text-blue-600 font-semibold">Blogs</a>
+            <a href="#" class="hover:text-blue-600 font-semibold">Contact Us</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Off-Canvas Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-800 bg-opacity-90 text-white hidden z-50">
+        <div class="absolute top-0 right-0 w-3/4 max-w-sm bg-white text-gray-800 h-full shadow-lg">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <nav class="flex flex-col space-y-6 mt-16 px-6">
+                <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Our Reviews</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Blogs</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Contact Us</a>
+                <a href="./about.html" class="hover:text-blue-600 font-semibold">About Us</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Support</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-[#012150] py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 text-white">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Become an SAP Expert</h2>
+                <p class="text-xl text-gray-100 max-w-3xl mx-auto">Accelerate your career with industry-recognized SAP
+                    certification training from experienced professionals.</p>
+            </div>
+
+            <!-- Course Cards -->
+            <div id="courses" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- SAP FICO Card -->
+                <div
+                    class="bg-white flex flex-col justify-between text-[#012150] rounded-xl p-6 course-card transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calculator text-3xl mr-3"></i>
+                        <h3 class="text-2xl font-bold">SAP FICO</h3>
+                    </div>
+                    <p class="mb-6">Financial Accounting & Controlling</p>
+                    <div>
+                        <a href="#fico"
+                            class="inline-flex items-center px-4 py-2 bg-white text-[#012150] rounded-lg font-medium hover:bg-[#012150] hover:text-white transition">
+                            Explore Course <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SAP MM Card -->
+                <div
+                    class="bg-white flex flex-col justify-between text-[#012150] rounded-xl p-6 course-card transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-boxes text-3xl mr-3"></i>
+                        <h3 class="text-2xl font-bold">SAP MM</h3>
+                    </div>
+                    <p class="mb-6">Materials Management</p>
+                    <div>
+                        <a href="#mm"
+                            class="inline-flex items-center px-4 py-2 bg-white rounded-lg font-medium text-[#012150] hover:bg-[#012150] hover:text-white transition">
+                            Explore Course <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SAP ABAP Card -->
+                <div
+                    class="bg-white flex flex-col justify-between text-[#012150] rounded-xl p-6 course-card transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-3xl mr-3"></i>
+                        <h3 class="text-2xl font-bold">SAP ABAP</h3>
+                    </div>
+                    <p class="mb-6">Advanced Business Application Programming</p>
+                    <div>
+                        <a href="#abap"
+                            class="inline-flex items-center px-4 py-2 bg-white rounded-lg font-medium text-[#012150] hover:bg-[#012150] hover:text-white transition">
+                            Explore Course <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SAP SD Card -->
+                <div
+                    class="bg-white flex flex-col justify-between text-[#012150] rounded-xl p-6 course-card transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-truck text-3xl mr-3"></i>
+                        <h3 class="text-2xl font-bold">SAP SD</h3>
+                    </div>
+                    <p class="mb-6">Sales & Distribution</p>
+                    <div>
+                        <a href="#sd"
+                            class="inline-flex items-center px-4 py-2 bg-white rounded-lg font-medium text-[#012150] hover:bg-[#012150] hover:text-white transition">
+                            Explore Course <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Our SAP Training?</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Expert Instructors</h3>
+                    <p class="text-gray-600 text-center">Learn from certified SAP professionals with 10+ years of
+                        industry experience.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-laptop-code text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Hands-on Training</h3>
+                    <p class="text-gray-600 text-center">Practical sessions on real SAP systems to build job-ready
+                        skills.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-briefcase text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Placement Assistance</h3>
+                    <p class="text-gray-600 text-center">100% placement guarantee with our extensive industry network.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAP FICO Section -->
+    <section id="fico" class="py-16 bg-gray-50 highlight-box">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">SAP FICO Training</h2>
+                    <p class="text-lg text-gray-600 mb-6">Master Financial Accounting and Controlling in SAP with our
+                        comprehensive training program designed for finance professionals.</p>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i> What You'll Learn
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>General Ledger, Accounts Payable, Receivable</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Asset Accounting, Bank Accounting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Cost Center & Profit Center Accounting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Integration with SAP MM & SD</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Who Should Join
+                        </h3>
+                        <p class="text-gray-600">Graduates, Career-switchers, Working professionals looking to
+                            specialize in SAP Finance</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="mb-3 sm:mb-0">
+                                <p class="text-gray-600"><i class="fas fa-clock text-blue-500 mr-2"></i> Duration: 3
+                                    Months</p>
+                            </div>
+                            <div class="mb-3 sm:mb-0">
+                                <p class="text-gray-600"><i class="fas fa-desktop text-blue-500 mr-2"></i> Mode: Online
+                                    & Offline</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600"><i class="fas fa-medal text-blue-500 mr-2"></i> 100% Placement
+                                    Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Enroll Now</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Course</label>
+                            <select
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>SAP FICO</option>
+                                <option>SAP MM</option>
+                                <option>SAP ABAP</option>
+                                <option>SAP SD</option>
+                            </select>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+                            Request Demo Class <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </form>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-600">Or contact us directly:</p>
+                        <a href="https://wa.me/1234567890"
+                            class="inline-flex items-center mt-2 px-6 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAP MM Section -->
+    <section id="mm" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:order-2 lg:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">SAP MM Training</h2>
+                    <p class="text-lg text-gray-600 mb-6">Become proficient in Materials Management module of SAP with
+                        hands-on training in procurement and inventory management.</p>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> What You'll Learn
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Procurement Process, Inventory Management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Purchase Requisition, Orders & Goods Receipt</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Invoice Verification & Integration</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-user-graduate text-green-500 mr-2"></i> Who Should Join
+                        </h3>
+                        <p class="text-gray-600">Commerce/Engineering graduates, Logistics professionals looking to
+                            enhance their SAP skills</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="mb-3 sm:mb-0">
+                                <p class="text-gray-600"><i class="fas fa-clock text-green-500 mr-2"></i> Duration: 2.5
+                                    Months</p>
+                            </div>
+                            <div class="mb-3 sm:mb-0">
+                                <p class="text-gray-600"><i class="fas fa-desktop text-green-500 mr-2"></i> Mode: Online
+                                    & Offline</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600"><i class="fas fa-medal text-green-500 mr-2"></i> 100% Placement
+                                    Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 lg:order-1">
+                    <div class="bg-gray-100 p-8 rounded-xl">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Course Highlights</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-green-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-certificate text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Industry-Recognized Certification</h4>
+                                        <p class="text-sm text-gray-600">Get certified by SAP professionals</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-green-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-project-diagram text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Real-world Projects</h4>
+                                        <p class="text-sm text-gray-600">Work on live case studies</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-green-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-users text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Small Batch Sizes</h4>
+                                        <p class="text-sm text-gray-600">Personalized attention</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-gray-800 mb-2">Next Batch Starts</h4>
+                            <div class="flex items-center">
+                                <div class="bg-green-500 text-white p-2 rounded-lg mr-3">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">15th July 2023</p>
+                                    <p class="text-sm text-gray-600">Limited seats available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAP ABAP Section -->
+    <section id="abap" class="py-16 bg-yellow-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">SAP ABAP Training</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Master the technical programming language of SAP to
+                    develop custom applications and enhancements.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-laptop-code text-yellow-500 mr-2"></i> Curriculum
+                    </h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                            <span>ABAP Syntax & Data Dictionary</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                            <span>Reports, Forms, BAPIs & BADIs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                            <span>Debugging & Enhancement Techniques</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-users text-yellow-500 mr-2"></i> Audience
+                    </h3>
+                    <p class="text-gray-600 mb-4">BCA/MCA, BSc-CS, BE-CS, Anyone with coding interest</p>
+                    <div class="bg-yellow-50 p-3 rounded-lg">
+                        <p class="text-sm text-gray-600"><i class="fas fa-info-circle text-yellow-500 mr-1"></i> Basic
+                            programming knowledge recommended</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-info-circle text-yellow-500 mr-2"></i> Details
+                    </h3>
+                    <div class="space-y-3 text-gray-600">
+                        <p class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-2"></i>
+                            <span>Duration: 3 Months</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-desktop text-yellow-500 mt-1 mr-2"></i>
+                            <span>Mode: Online & Offline</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-certificate text-yellow-500 mt-1 mr-2"></i>
+                            <span>Certificate upon completion</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#contact"
+                    class="inline-flex items-center px-8 py-3 bg-yellow-500 text-white rounded-lg font-medium hover:bg-yellow-600 transition shadow-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Book Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAP SD Section -->
+    <section id="sd" class="py-16 bg-red-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">SAP SD Training</h2>
+                    <p class="text-lg text-gray-600 mb-6">Learn the Sales and Distribution module of SAP to manage sales
+                        orders, shipping, billing and customer master data.</p>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Course Modules</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-3 rounded-lg shadow-sm">
+                                <h4 class="font-medium text-red-600 mb-1">Module 1</h4>
+                                <p class="text-sm text-gray-600">Sales Order Processing</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow-sm">
+                                <h4 class="font-medium text-red-600 mb-1">Module 2</h4>
+                                <p class="text-sm text-gray-600">Pricing, Shipping, Billing</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow-sm">
+                                <h4 class="font-medium text-red-600 mb-1">Module 3</h4>
+                                <p class="text-sm text-gray-600">Customer Master Data</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow-sm">
+                                <h4 class="font-medium text-red-600 mb-1">Module 4</h4>
+                                <p class="text-sm text-gray-600">Integration with MM and FICO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Duration & Placement</h3>
+                        <div class="flex flex-wrap justify-between">
+                            <div class="mb-3">
+                                <p class="text-gray-600"><i class="fas fa-hourglass-half text-red-500 mr-2"></i> 2.5
+                                    Months</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="text-gray-600"><i class="fas fa-laptop-house text-red-500 mr-2"></i> Online &
+                                    Offline</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600"><i class="fas fa-handshake text-red-500 mr-2"></i> 100%
+                                    Placement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Download Syllabus</h3>
+                        <p class="text-gray-600 text-center mb-6">Get complete course details and curriculum in your
+                            inbox</p>
+
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Your Name"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-red-500 text-white py-3 rounded-lg font-medium hover:bg-red-600 transition">
+                                Send Syllabus <i class="fas fa-download ml-2"></i>
+                            </button>
+                        </form>
+
+                        <div class="mt-6 text-center">
+                            <p class="text-gray-500 text-sm">We respect your privacy. Your information is safe with us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Students Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our successful alumni who transformed their careers
+                    with our SAP training programs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rahul Sharma</h4>
+                            <p class="text-sm text-gray-500">SAP FICO Consultant</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The hands-on training helped me secure a job at a top MNC immediately
+                        after course completion. The faculty's industry experience made all the difference."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-green-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Patel</h4>
+                            <p class="text-sm text-gray-500">SAP MM Analyst</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Coming from a non-technical background, I was nervous about learning
+                        SAP. But the structured curriculum and patient instructors made it easy to understand."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-purple-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Amit Joshi</h4>
+                            <p class="text-sm text-gray-500">SAP ABAP Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The real-world projects gave me confidence to handle client
+                        requirements. Got placed through campus recruitment with a 50% salary hike."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                    <p class="text-blue-100 mb-8">Have questions about our SAP courses? Contact our admissions team for
+                        personalized guidance.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Our Location</h4>
+                                <p class="text-blue-100">123 Business Park, Sector 15, Mumbai, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Call Us</h4>
+                                <p class="text-blue-100">+91 9876543210</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Email Us</h4>
+                                <p class="text-blue-100">info@sapmaster.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-500 p-3 rounded-full hover:bg-blue-400 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-500 p-3 rounded-full hover:bg-blue-400 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-blue-500 p-3 rounded-full hover:bg-blue-400 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-500 p-3 rounded-full hover:bg-blue-400 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Course Interested In</label>
+                                <select
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>SAP FICO</option>
+                                    <option>SAP MM</option>
+                                    <option>SAP ABAP</option>
+                                    <option>SAP SD</option>
+                                    <option>Not Sure</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Message</label>
+                                <textarea rows="4"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890"
+        class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-xl floating-btn z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> MyERP Hub
+                    </h3>
+                    <p class="text-gray-400 mb-4">Transforming careers through industry-aligned SAP training since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Placements</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Courses</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP FICO</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP MM</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP SD</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP ABAP</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP HANA</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">#60C, 2nd Floor, Near Arjun Theater, Western Hills, KPHB
+                                Hyderabad-72</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                            <span class="text-gray-400">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                            <span class="text-gray-400">info@myerphub.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2024 MyERP Hub. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (can be expanded)
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const mobileMenuButton = document.querySelector('.md\\:hidden');
+        //     const navMenu = document.querySelector('nav');
+
+        //     mobileMenuButton.addEventListener('click', function () {
+        //         navMenu.classList.toggle('hidden');
+        //         navMenu.classList.toggle('flex');
+        //         navMenu.classList.toggle('flex-col');
+        //         navMenu.classList.toggle('absolute');
+        //         navMenu.classList.toggle('top-16');
+        //         navMenu.classList.toggle('right-4');
+        //         navMenu.classList.toggle('bg-white');
+        //         navMenu.classList.toggle('p-4');
+        //         navMenu.classList.toggle('rounded-lg');
+        //         navMenu.classList.toggle('shadow-md');
+        //         navMenu.classList.toggle('space-y-4');
+        //         navMenu.classList.toggle('space-x-8');
+        //     });
+
+        //     // Smooth scrolling for anchor links
+        //     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        //         anchor.addEventListener('click', function (e) {
+        //             e.preventDefault();
+
+        //             document.querySelector(this.getAttribute('href')).scrollIntoView({
+        //                 behavior: 'smooth'
+        //             });
+        //         });
+        //     });
+        // });
+         // Toggle mobile menu visibility
+         document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            closeMobileMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+
+            // Close menu when clicking outside
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target === mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

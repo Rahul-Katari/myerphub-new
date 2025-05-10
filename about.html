@@ -36,44 +36,8 @@
 </head>
 
 <body class="font-sans antialiased text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50 hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-2"></i>
-                        <span class="text-xl font-bold text-blue-600">SAPCareerPro</span>
-                    </div>
-                </div>
-                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
-                    <a href="#" class="text-blue-600 font-medium">About</a>
-                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Courses</a>
-                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Placements</a>
-                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Testimonials</a>
-                    <div class="flex space-x-4">
-                        <a href="#"
-                            class="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 font-medium">Book
-                            Demo</a>
-                        <a href="#"
-                            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium">Brochure</a>
-                    </div>
-                </div>
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
-                        <span class="sr-only">Open main menu</span>
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- new navbar start -->
     <!-- Top Bar -->
-    <div class="bg-gray-100 text-sm py-2 px-4 flex justify-between items-center">
+    <div class="bg-gray-100 text-sm py-2 px-4 md:flex hidden justify-between items-center">
         <div class="flex items-center space-x-4">
             <div class="flex items-center space-x-1">
                 <a href="tel:9395191219" class="text-black hover:underline font-semibold"><i
@@ -91,18 +55,40 @@
     </div>
 
     <!-- Main Navbar -->
-    <div class="flex items-center justify-between px-4 py-2 border-b">
+    <div class="flex items-center justify-between md:px-4 max-sm:pe-4 py-2 border-b">
         <!-- Logo -->
         <a href="./landing.html">
             <img src="./img/logo.png" alt="MyERP Hub Logo" class="h-16" />
         </a>
 
-        <!-- Navigation -->
-        <div class="space-x-8 text-lg flex flex-wrap justify-center md:justify-start">
-            <a href="#" class="hover:text-blue-600 font-semibold">Courses</a>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8 text-lg flex-wrap justify-center md:justify-start">
+            <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
             <a href="#" class="hover:text-blue-600 font-semibold">Our Reviews</a>
             <a href="#" class="hover:text-blue-600 font-semibold">Blogs</a>
             <a href="#" class="hover:text-blue-600 font-semibold">Contact Us</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Off-Canvas Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-800 bg-opacity-90 text-white hidden z-50">
+        <div class="absolute top-0 right-0 w-3/4 max-w-sm bg-white text-gray-800 h-full shadow-lg">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <nav class="flex flex-col space-y-6 mt-16 px-6">
+                <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Our Reviews</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Blogs</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Contact Us</a>
+                <a href="./about.html" class="hover:text-blue-600 font-semibold">About Us</a>
+                <a href="#" class="hover:text-blue-600 font-semibold">Support</a>
+            </nav>
         </div>
     </div>
 
@@ -117,11 +103,11 @@
         </div>
     </section>
     <section>
-        <div class="bg-[#012150]">
-            <h3 class="text-5xl text-white text-center font-bold pt-16">Where Thousands Begin Their SAP Career Journey
+        <div class="bg-[#012150] max-sm:px-5 py-10">
+            <h3 class="md:text-5xl text-xl text-white md:text-center font-bold">Where Thousands Begin Their SAP Career Journey
             </h3>
-            <div class="md:grid grid-cols-2 max-w-7xl m-auto py-14 gap-10">
-                <div class="text-white space-y-10 flex flex-col justify-center text-xl">
+            <div class="md:grid grid-cols-2 max-w-7xl m-auto md:py-14 py-4 gap-10 max-sm:space-y-10">
+                <div class="text-white md:space-y-10 space-y-3 flex flex-col justify-center md:text-xl ">
                     <p>
                         At MyERP Hub, we empower individuals with industry-relevant SAP skills that unlock high-growth
                         career opportunities. As a leading training and placement provider, we specialize in SAP modules
@@ -191,19 +177,29 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Stat 1 -->
                 <div class="stat-card bg-white bg-opacity-10 p-8 rounded-lg text-center transition duration-300">
-                    <div class="text-5xl font-bold mb-2">5,000+</div>
+                    <div class="text-5xl font-bold mb-2"><span data-purecounter-start="0" data-purecounter-end="5000"
+                            class="purecounter">
+                            0
+                        </span>+</div>
+
                     <div class="text-xl">Professionals Trained</div>
                 </div>
 
                 <!-- Stat 2 -->
                 <div class="stat-card bg-white bg-opacity-10 p-8 rounded-lg text-center transition duration-300">
-                    <div class="text-5xl font-bold mb-2">85%</div>
+                    <div class="text-5xl font-bold mb-2"><span data-purecounter-start="0" data-purecounter-end="85"
+                            class="purecounter">
+                            0
+                        </span>%</div>
                     <div class="text-xl">Placement Rate</div>
                 </div>
 
                 <!-- Stat 3 -->
                 <div class="stat-card bg-white bg-opacity-10 p-8 rounded-lg text-center transition duration-300">
-                    <div class="text-5xl font-bold mb-2">80%</div>
+                    <div class="text-5xl font-bold mb-2"><span data-purecounter-start="0" data-purecounter-end="80"
+                            class="purecounter">
+                            0
+                        </span>%</div>
                     <div class="text-xl">Placed in Top MNCs</div>
                 </div>
 
@@ -469,7 +465,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gray-900 text-[white]">
+    <section class="pt-16 bg-gray-900 text-[white]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex items-center justify-between">
                 <div class="md:w-2/3 mb-8 md:mb-0">
@@ -487,13 +483,117 @@
         </div>
     </section>
 
+    <!-- Footer Start -->
+    <div class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 md:px-5 bg-gray-900 text-white pt-5 animate-fadeIn">
+            <div class="py-5">
+                <div class="grid md:grid-cols-3 gap-5 space-y-5 md:space-y-0">
+                    <!-- USA -->
+                    <div
+                        class="shadow-xl rounded-xl bg-gradient-to-br from-gray-800 to-gray-700 p-4 h-full flex flex-col justify-between">
+                        <h1 class="text-white mb-2 flex items-center text-2xl md:text-2xl">
+                            USA
+                            <img src="./img/footer/usa.jpg" alt="USA"
+                                class="ms-5 size-20 object-cover rounded-full ml-4" />
+                        </h1>
+                        <div class="text-sm flex flex-col space-y-3">
+                            <p class="text-sm flex items-center"><i class="fa fa-map-marker-alt mr-3"></i> Park
+                                Meadows
+                                Drive,
+                                Littleton, Colorado-80122</p>
+                            <a href="tel:+1(720)2611132"><i class="fa fa-phone-alt mr-3"></i>+1 (720)
+                                261
+                                1132</a>
+                            <a href="mailto:info@myerphub.com"><i class="fa fa-envelope mr-3"></i>info@myerphub.com</a>
+                            <div class="flex gap-2 pt-2 hidden">
+                                <a href="https://www.instagram.com/sapfico_hub/" target="_blank"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="#"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hyderabad -->
+                    <div
+                        class="shadow-xl rounded-xl bg-gradient-to-br from-gray-800 to-gray-700 p-4 h-full flex flex-col justify-between">
+                        <h1 class="text-white mb-2 flex items-center text-2xl md:text-2xl">
+                            Hyderabad
+                            <img src="./img/footer/hyderabad.png" alt="Hyderabad"
+                                class="ms-5 size-20 object-cover rounded-full ml-4" />
+                        </h1>
+                        <div class="text-sm flex flex-col space-y-3">
+                            <p class="text-sm flex items-center"><i class="fa fa-map-marker-alt mr-3"></i>
+                                #60C, Near Arjun Theater, Western Hills, KPHB-72</p>
+                            <a href="tel:+919395191219"><i class="fa fa-phone-alt mr-3"></i>+91 93951
+                                91219</a>
+                            <a href="mailto:info@myerphub.com"><i class="fa fa-envelope mr-3"></i>info@myerphub.com</a>
+                            <div class="flex gap-2 pt-2 hidden">
+                                <a href="https://www.instagram.com/sapfico_hub/" target="_blank"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/sapficotrainingandplacementinhyderabad/"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.youtube.com/@sapficohub"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/sap-fico-hub/posts/?feedView=all"
+                                    class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bengaluru -->
+                    <div
+                        class="shadow-xl rounded-xl bg-gradient-to-br from-gray-800 to-gray-700 p-4 h-full flex flex-col justify-between">
+                        <h1 class="text-white mb-2 flex items-center text-2xl md:text-2xl">
+                            Bengaluru
+                            <img src="./img/footer/bengaluru.png" alt="Bengaluru"
+                                class="ms-5 size-20 object-cover rounded-full ml-4" />
+                        </h1>
+                        <p class="text-sm mb-2 flex items-center"><i class="fa fa-map-marker-alt mr-3"></i>Masjid
+                            Bldg, Begur Mn Rd, Bommanahalli-560068</p>
+                        <a href="tel:+919395191219" class="block mb-2 text-sm"><i class="fa fa-phone-alt mr-3"></i>+91
+                            70221
+                            70619</a>
+                        <a href="mailto:info@myerphub.com" class="block mb-2 text-sm"><i
+                                class="fa fa-envelope mr-3"></i>info@myerphub.com</a>
+                        <div class="flex gap-2 pt-2 hidden">
+                            <a href="https://www.instagram.com/erp_hub/" target="_blank"
+                                class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61568692711977"
+                                class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/@sapficohub"
+                                class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="#"
+                                class="border border-white rounded-full p-2 hover:bg-white hover:text-black transition size-8 flex justify-center items-center"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                 <div>
                     <h3 class="text-xl font-bold mb-6 flex items-center">
-                        <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> SAPCareerPro
+                        <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> MyERP Hub
                     </h3>
                     <p class="text-gray-400 mb-4">Transforming careers through industry-aligned SAP training since 2015.
                     </p>
@@ -523,7 +623,6 @@
                         <li><a href="#" class="text-gray-400 hover:text-white">SAP MM</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white">SAP SD</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white">SAP ABAP</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">SAP HANA</a></li>
                     </ul>
                 </div>
 
@@ -532,7 +631,8 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
-                            <span class="text-gray-400">123 Tech Park, Sector 18, Noida, UP 201301</span>
+                            <span class="text-gray-400">#60C, 2nd Floor, Near Arjun Theater, Western Hills, KPHB
+                                Hyderabad-72</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
@@ -540,19 +640,27 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope text-blue-500 mr-3"></i>
-                            <span class="text-gray-400">info@sapcareerpro.com</span>
+                            <span class="text-gray-400">info@myerphub.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2024 SAPCareerPro. All rights reserved.</p>
+                <p class="text-gray-400 mb-4 md:mb-0">© 2024 MyERP Hub. All rights reserved.</p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
                     <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Refund Policy</a>
+                    <!-- <a href="#" class="text-gray-400 hover:text-white">Refund Policy</a> -->
                 </div>
+            </div>
+            <!-- Declaration -->
+            <div class="text-xs text-gray-500">
+                <strong>Declaration:</strong> MyERP HUB is not an authorized SAP Partner. Any course, training or other
+                service provided at MyERP HUB are not associated, affiliated, authorized, endorsed by, or in any way
+                officially connected with SAP organization. SAP is a registered trademark of SAP AG in Germany and many
+                other countries. MyERP HUB is NOT associated with the SAP organization. We do not conduct any SAP
+                Certification training programs.
             </div>
         </div>
     </footer>
@@ -565,19 +673,24 @@
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </div>
-
+    <script type="module" src="./js/purecounter.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script type="module" src="./js/purecounter-initializer.js"></script> -->
+    <!-- <script>
+        new PureCounter();
+    </script> -->
     <script>
         // Simple form validation
-        document.querySelector('form').addEventListener('submit', function (e) {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
+        // document.querySelector('form').addEventListener('submit', function (e) {
+        //     const name = document.getElementById('name').value;
+        //     const email = document.getElementById('email').value;
+        //     const phone = document.getElementById('phone').value;
 
-            if (!name || !email || !phone) {
-                e.preventDefault();
-                alert('Please fill all required fields');
-            }
-        });
+        //     if (!name || !email || !phone) {
+        //         e.preventDefault();
+        //         alert('Please fill all required fields');
+        //     }
+        // });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -587,6 +700,28 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // Toggle mobile menu visibility
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            closeMobileMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+
+            // Close menu when clicking outside
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target === mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                }
             });
         });
     </script>
