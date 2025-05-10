@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Training Institute | Career Transformation Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        .trainer-card:hover .trainer-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-blue-600">SAPCareerPro</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-blue-600 font-medium">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Courses</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Placements</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Trainers</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 font-medium">Testimonials</a>
+                    <div class="flex space-x-4">
+                        <a href="#" class="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 font-medium">Book Demo</a>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium">Brochure</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Transform Your Career with Real-Time SAP Training</h1>
+                    <p class="text-xl md:text-2xl text-blue-100 mb-8">For graduates, working professionals, and career restarters – become job-ready in just 3 months.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#" class="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-semibold text-center shadow-md transition duration-300">Book a Free Demo</a>
+                        <a href="#" class="bg-transparent border-2 border-white hover:bg-blue-700 px-6 py-3 rounded-md text-lg font-semibold text-center transition duration-300">Download Course Brochure</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Happy students" class="rounded-lg shadow-2xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our SAP Training Program</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We provide the most comprehensive SAP training with industry-aligned curriculum</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Real-Time Industry Projects</h3>
+                    <p class="text-gray-600">Learn by doing with hands-on projects that simulate real SAP implementation scenarios in various industries.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">100% Placement Support</h3>
+                    <p class="text-gray-600">We assist you until you're placed with resume building, interview prep, and direct company referrals.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chalkboard-teacher text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Trainers from MNCs</h3>
+                    <p class="text-gray-600">Learn from certified SAP professionals with 10+ years of implementation experience at top companies.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-graduate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Custom Career Guidance</h3>
+                    <p class="text-gray-600">Tailored support for non-IT professionals and those with career gaps to transition smoothly into SAP roles.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Flexible Timings</h3>
+                    <p class="text-gray-600">Weekend & evening batches available to accommodate working professionals and students.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Certification Support</h3>
+                    <p class="text-gray-600">Preparation and guidance for SAP certification exams to validate your expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Courses -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our SAP Training Modules</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose from our industry-relevant SAP modules and kickstart your career</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-calculator text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP FICO</h3>
+                        <p class="text-gray-600 mb-4">Master Financial Accounting and Controlling modules with real-time implementation scenarios.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-boxes text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP MM</h3>
+                        <p class="text-gray-600 mb-4">Learn Materials Management processes including procurement, inventory, and vendor management.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-truck text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP SD</h3>
+                        <p class="text-gray-600 mb-4">Gain expertise in Sales and Distribution processes from order to cash cycle.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-code text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP ABAP</h3>
+                        <p class="text-gray-600 mb-4">Develop programming skills for SAP customization and development using ABAP language.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-database text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP HANA</h3>
+                        <p class="text-gray-600 mb-4">Learn in-memory computing platform for real-time analytics and applications.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-users-cog text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SAP HR/HCM</h3>
+                        <p class="text-gray-600 mb-4">Master Human Capital Management processes including payroll, time management, and organizational management.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition duration-300 font-medium">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Highlights -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Placement Success</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">We've successfully placed our students in top companies with competitive packages</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 mb-12">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/infosys.com" alt="Infosys" class="h-12">
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/tcs.com" alt="TCS" class="h-12">
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/wipro.com" alt="Wipro" class="h-12">
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/capgemini.com" alt="Capgemini" class="h-12">
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/ibm.com" alt="IBM" class="h-12">
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://logo.clearbit.com/accenture.com" alt="Accenture" class="h-12">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-800 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold mb-2">500+</div>
+                    <div class="text-xl">Students Placed in 2024</div>
+                </div>
+                <div class="bg-blue-700 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold mb-2">₹3LPA - ₹12LPA</div>
+                    <div class="text-xl">Salary Packages</div>
+                </div>
+                <div class="bg-blue-600 p-6 rounded-lg text-center">
+                    <div class="text-5xl font-bold mb-2">90%</div>
+                    <div class="text-xl">Placement Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Expertise -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Learn From Industry Experts</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our trainers bring real-world SAP implementation experience to the classroom</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Trainer 1 -->
+                <div class="trainer-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mr. Rajesh Kumar" class="w-full h-full object-cover trainer-img transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Mr. Rajesh Kumar</h3>
+                        <p class="text-blue-600 font-medium mb-3">SAP FICO Consultant</p>
+                        <p class="text-gray-600 mb-4"><span class="font-semibold">12+ Years Experience</span> | Infosys, IBM, Deloitte</p>
+                        <p class="text-gray-700">Certified SAP FICO consultant with implementation experience across manufacturing, retail and banking sectors.</p>
+                    </div>
+                </div>
+                
+                <!-- Trainer 2 -->
+                <div class="trainer-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ms. Priya Sharma" class="w-full h-full object-cover trainer-img transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Ms. Priya Sharma</h3>
+                        <p class="text-green-600 font-medium mb-3">SAP MM Consultant</p>
+                        <p class="text-gray-600 mb-4"><span class="font-semibold">10+ Years Experience</span> | TCS, Wipro, Tech Mahindra</p>
+                        <p class="text-gray-700">Specialized in procurement and inventory management implementations for large-scale enterprises.</p>
+                    </div>
+                </div>
+                
+                <!-- Trainer 3 -->
+                <div class="trainer-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mr. Amit Patel" class="w-full h-full object-cover trainer-img transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Mr. Amit Patel</h3>
+                        <p class="text-purple-600 font-medium mb-3">SAP SD Consultant</p>
+                        <p class="text-gray-600 mb-4"><span class="font-semibold">14+ Years Experience</span> | Accenture, Capgemini, Cognizant</p>
+                        <p class="text-gray-700">Expert in order-to-cash processes with specialization in automotive and pharmaceutical industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Demo Invitation -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Attend a Free Live Demo Class</h2>
+                    <p class="text-xl mb-8">Experience our training methodology first-hand. Get all your questions answered by our experts.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check-circle text-blue-600"></i>
+                            </div>
+                            <p>See how our trainers explain complex SAP concepts simply</p>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check-circle text-blue-600"></i>
+                            </div>
+                            <p>Understand our practical approach to SAP training</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check-circle text-blue-600"></i>
+                            </div>
+                            <p>Get clarity on career opportunities in SAP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Book Your Free Demo</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="course" class="block text-gray-700 font-medium mb-2">Course Interested In</label>
+                                <select id="course" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Select a course</option>
+                                    <option value="fico">SAP FICO</option>
+                                    <option value="mm">SAP MM</option>
+                                    <option value="sd">SAP SD</option>
+                                    <option value="abap">SAP ABAP</option>
+                                    <option value="hana">SAP HANA</option>
+                                    <option value="hr">SAP HR/HCM</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition duration-300 font-medium">Book My Free Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Students Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Success stories from our alumni who transformed their careers with SAP training</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Anjali Mehta" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Anjali Mehta</h4>
+                            <p class="text-blue-600">SAP FICO Consultant at TCS</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"After completing my B.Com, I was struggling to find a good career path. The SAP FICO training transformed my career completely. The practical approach and placement support helped me secure a ₹5.5 LPA package at TCS within 2 months of completing the course."</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-4">Before: Accounts Assistant (₹2.4 LPA)</span>
+                        <span>After: SAP Consultant (₹5.5 LPA)</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Rahul Verma" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Rahul Verma</h4>
+                            <p class="text-green-600">SAP MM Consultant at Wipro</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"As a mechanical engineer with 3 years gap in my career, I was skeptical about my job prospects. The SAP MM training with real-time projects gave me the confidence and skills needed. The placement team referred me to multiple companies and I got placed at Wipro with ₹6.2 LPA package."</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-4">Before: Unemployed (Career Gap)</span>
+                        <span>After: SAP Consultant (₹6.2 LPA)</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Priyanka Singh" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Priyanka Singh</h4>
+                            <p class="text-purple-600">SAP SD Consultant at Infosys</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Coming from a non-IT background (B.Sc Chemistry), I never imagined I could work in IT. The weekend batches allowed me to continue my job while learning SAP SD. The trainers simplified complex concepts and the placement team helped me crack interviews. Now I'm working at Infosys with ₹4.8 LPA."</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-4">Before: Lab Technician (₹2.8 LPA)</span>
+                        <span>After: SAP Consultant (₹4.8 LPA)</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Vikram Joshi" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Vikram Joshi</h4>
+                            <p class="text-yellow-600">SAP ABAP Developer at IBM</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"As a B.Tech graduate working in a small IT firm, I wanted to upgrade my skills. The SAP ABAP course with real-time coding exercises was exactly what I needed. The certification preparation helped me stand out and I got placed at IBM with ₹8.5 LPA package. The career guidance sessions were invaluable."</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-4">Before: Software Tester (₹3.5 LPA)</span>
+                        <span>After: SAP Developer (₹8.5 LPA)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 font-medium">
+                    <i class="fas fa-play-circle mr-2"></i> Watch Video Testimonials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get answers to common questions about our SAP training program</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ 1 -->
+                <div class="mb-6">
+                    <button class="flex items-center justify-between w-full px-6 py-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left" onclick="toggleFAQ(1)">
+                        <span class="text-lg font-medium text-gray-800">What are the batch timings available?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="px-6 py-4 bg-white mt-1 rounded-b-lg hidden" id="faq-content-1">
+                        <p class="text-gray-600">We offer flexible batch timings to accommodate different schedules:</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">Weekday batches: Monday to Friday (9:30 AM - 12:30 PM or 6:30 PM - 9:30 PM)</li>
+                            <li class="mb-1">Weekend batches: Saturday & Sunday (10:00 AM - 4:00 PM with lunch break)</li>
+                            <li>Fast-track batches: Intensive 4-week program (Monday to Saturday, 10:00 AM - 5:00 PM)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="mb-6">
+                    <button class="flex items-center justify-between w-full px-6 py-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left" onclick="toggleFAQ(2)">
+                        <span class="text-lg font-medium text-gray-800">Do you provide EMI options for course fees?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="px-6 py-4 bg-white mt-1 rounded-b-lg hidden" id="faq-content-2">
+                        <p class="text-gray-600">Yes, we have partnered with leading financial institutions to provide EMI options:</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">No-cost EMI available for 3, 6, 9 and 12 months</li>
+                            <li class="mb-1">Interest-bearing EMI options for longer durations</li>
+                            <li>Credit card and debit card EMI options available</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Our counselors can help you choose the best payment plan based on your requirements.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="mb-6">
+                    <button class="flex items-center justify-between w-full px-6 py-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left" onclick="toggleFAQ(3)">
+                        <span class="text-lg font-medium text-gray-800">What kind of placement support do you provide?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="px-6 py-4 bg-white mt-1 rounded-b-lg hidden" id="faq-content-3">
+                        <p class="text-gray-600">Our comprehensive placement support includes:</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">Resume building workshops tailored for SAP roles</li>
+                            <li class="mb-1">Mock interviews with industry experts</li>
+                            <li class="mb-1">Direct referrals to our partner companies</li>
+                            <li class="mb-1">Job portal access with exclusive SAP job listings</li>
+                            <li>Interview preparation sessions covering technical and HR rounds</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">We continue supporting you until you secure a job in SAP domain.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="mb-6">
+                    <button class="flex items-center justify-between w-full px-6 py-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left" onclick="toggleFAQ(4)">
+                        <span class="text-lg font-medium text-gray-800">Can I learn SAP without any technical background?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300" id="faq-icon-4"></i>
+                    </button>
+                    <div class="px-6 py-4 bg-white mt-1 rounded-b-lg hidden" id="faq-content-4">
+                        <p class="text-gray-600">Absolutely! Many of our successful students come from non-technical backgrounds like:</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">Commerce graduates (B.Com, M.Com, CA, etc.)</li>
+                            <li class="mb-1">Arts and science graduates</li>
+                            <li class="mb-1">MBA graduates</li>
+                            <li>Professionals from non-IT domains</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Our training methodology starts with fundamentals and gradually builds up your SAP knowledge. Functional modules like FICO, MM, SD are particularly suitable for non-technical students.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="mb-6">
+                    <button class="flex items-center justify-between w-full px-6 py-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left" onclick="toggleFAQ(5)">
+                        <span class="text-lg font-medium text-gray-800">What is the duration of the training program?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300" id="faq-icon-5"></i>
+                    </button>
+                    <div class="px-6 py-4 bg-white mt-1 rounded-b-lg hidden" id="faq-content-5">
+                        <p class="text-gray-600">The duration varies based on the module and batch type:</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">Regular batches: 3 months (120 hours of training)</li>
+                            <li class="mb-1">Weekend batches: 4 months (same 120 hours spread over weekends)</li>
+                            <li class="mb-1">Fast-track batches: 4 weeks (intensive 120 hours)</li>
+                            <li>Combination modules (e.g., FICO+MM): 5 months</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Each program includes 80 hours of classroom training and 40 hours of hands-on project work.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="#" class="text-blue-600 font-medium hover:text-blue-800">View All FAQs <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Career?</h2>
+                    <p class="text-xl">Get our detailed course brochure with complete curriculum, fee structure, and placement details.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-white rounded-lg shadow-xl p-6 text-gray-800">
+                        <div class="mb-4">
+                            <label for="brochure-name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="brochure-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="brochure-email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="brochure-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="brochure-phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="brochure-phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="brochure-qualification" class="block text-gray-700 font-medium mb-2">Highest Qualification</label>
+                            <input type="text" id="brochure-qualification" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition duration-300 font-medium">Submit & Get Brochure</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-500 mr-2"></i> SAPCareerPro
+                    </h3>
+                    <p class="text-gray-400 mb-4">Transforming careers through industry-aligned SAP training since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Placements</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Courses</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP FICO</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP MM</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP SD</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP ABAP</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">SAP HANA</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Tech Park, Sector 18, Noida, UP 201301</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                            <span class="text-gray-400">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                            <span class="text-gray-400">info@sapcareerpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2024 SAPCareerPro. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/919876543210" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center" style="width: 60px; height: 60px;">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Toggle FAQ content
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('transform');
+            icon.classList.toggle('rotate-180');
+        }
+        
+        // Simple form validation for demo booking
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            if (!name || !email || !phone) {
+                e.preventDefault();
+                alert('Please fill all required fields');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
