@@ -1,4 +1,4 @@
-const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+const footerHTML = `<div class="container px-5 bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6 d-none">
@@ -8,8 +8,10 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                     <a class="btn btn-link" href="best-sap-training-institutes-with-placements-contactus.html">Contact Us</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Contact - USA</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Park Meadows Drive , Littleton,
+                    <div class="shadow rounded-xl bg-gradient p-4 h-full flex flex-col justify-between">
+                    <h1 class="text-white mb-3 flex items-center text-4xl">USA <img src="./img/footer/usa.jpg" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                    <div class="">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Park Meadows Drive, Littleton,
                         Colorado-80122</p>
                     <a href="tel:+1(720)2611132">
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 (720) 261 1132</p>
@@ -22,41 +24,43 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
                         <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Contact - Hyderabad</h4>
-                    <div class="mb-2"><a href="https://maps.app.goo.gl/LAhZpv8omu58pLy79" target="_blank" ><i class="fa fa-map-marker-alt me-3"></i>#60C, 2nd Floor, Near Arjun Theater,
-                        Western Hills, KPHB Hyderabad-72</a></div>
-                    <a href="tel:+919395191219">
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9395191219</p>
-                    </a>
-                    <a href="mailto:info@myerphub.com">
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
-                    </a>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sapfico_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/sapficotrainingandplacementinhyderabad/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@sapficohub"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/sap-fico-hub/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="shadow rounded-xl bg-gradient p-4">
+                        <h1 class="text-white mb-3 flex items-center text-4xl">Hyderabad <img src="./img/footer/hyderabad.png" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>#60C, 2nd Floor, Near Arjun Theater, Western Hills, KPHB Hyderabad-72</p>
+                        <a href="tel:+919395191219">
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 93951 91219</p>
+                        </a>
+                        <a href="mailto:info@myerphub.com">
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
+                        </a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sapfico_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/sapficotrainingandplacementinhyderabad/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@sapficohub"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/sap-fico-hub/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
-               
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Contact - Bengaluru</h4>
-
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No.12,165/1,masjid Building,1st floor,begur main road,Bommanahalli, Bangalore - 560068</p>
-                    <a href="tel:+919395191219">
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7022170619</p>
-                    </a>
-                    <a href="mailto:info@myerphub.com">
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
-                    </a>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/erp_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61568692711977"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@sapficohub"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="shadow rounded-xl bg-gradient p-4">
+                        <h1 class="text-white mb-3 flex items-center text-4xl">Bengaluru<img src="./img/footer/bengaluru.png" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No.12,165/1, Masjid Building, 1st Floor, Begur Main Road, Bommanahalli, Bengaluru - 560068</p>
+                        <a href="tel:+919395191219">
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 70221 70619</p>
+                        </a>
+                        <a href="mailto:info@myerphub.com">
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@myerphub.com</p>
+                        </a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/erp_hub/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61568692711977"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@sapficohub"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 d-none">
@@ -94,7 +98,7 @@ const footerHTML = `<div class="container-fluid bg-dark text-light footer pt-5 m
             </div>
         </div>
         <div class="container">
-        <div class="shadow rounded-3 p-4">
+        <div class="text-sm text-gray-600">
             <strong>Declaration: </strong> MyERP HUB is not an authorized SAP Partner. Any course, training or any other
             service provided at MyERP HUB are not associated, affiliated, authorized, endorsed by, or in any way
             officially connected with SAP organization. SAP is a registered trademark of SAP AG in Germany and many
