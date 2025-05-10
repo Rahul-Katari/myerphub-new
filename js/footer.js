@@ -1,5 +1,5 @@
-const footerHTML = `<div class="container px-5 bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
+const footerHTML = `<div class="max-w-7xl container md:px-5 bg-dark text-light footer md:pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class=" py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6 d-none">
                     <h4 class="text-white mb-3">Quick Link</h4>
@@ -9,7 +9,7 @@ const footerHTML = `<div class="container px-5 bg-dark text-light footer pt-5 mt
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="shadow rounded-xl bg-gradient p-4 h-full flex flex-col justify-between">
-                    <h1 class="text-white mb-3 flex items-center text-4xl">USA <img src="./img/footer/usa.jpg" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                    <h1 class="text-white mb-3 flex items-center md:text-4xl text-2xl">USA <img src="./img/footer/usa.jpg" class="ms-5 h-[100px] w-[100px] object-cover rounded-full"></h1>
                     <div class="">
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Park Meadows Drive, Littleton,
                         Colorado-80122</p>
@@ -28,8 +28,9 @@ const footerHTML = `<div class="container px-5 bg-dark text-light footer pt-5 mt
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="shadow rounded-xl bg-gradient p-4">
-                        <h1 class="text-white mb-3 flex items-center text-4xl">Hyderabad <img src="./img/footer/hyderabad.png" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                    <div class="shadow rounded-xl bg-gradient p-4 h-full flex flex-col justify-between">
+                        <h1 class="text-white mb-3 flex items-center md:text-4xl text-2xl">Hyderabad <img src="./img/footer/hyderabad.png" class="ms-5 h-[100px] w-[100px] object-cover rounded-full"></h1>
+                        <div>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>#60C, 2nd Floor, Near Arjun Theater, Western Hills, KPHB Hyderabad-72</p>
                         <a href="tel:+919395191219">
                             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 93951 91219</p>
@@ -43,11 +44,12 @@ const footerHTML = `<div class="container px-5 bg-dark text-light footer pt-5 mt
                             <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@sapficohub"><i class="fab fa-youtube"></i></a>
                             <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/sap-fico-hub/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="shadow rounded-xl bg-gradient p-4">
-                        <h1 class="text-white mb-3 flex items-center text-4xl">Bengaluru<img src="./img/footer/bengaluru.png" style="height: 92px;object-fit: cover;border-radius: 50%;width: 100px;" class="ms-5"></h1>
+                        <h1 class="text-white mb-3 flex items-center md:text-4xl text-2xl">Bengaluru<img src="./img/footer/bengaluru.png" class="ms-5 h-[100px] w-[100px] object-cover rounded-full"></h1>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No.12,165/1, Masjid Building, 1st Floor, Begur Main Road, Bommanahalli, Bengaluru - 560068</p>
                         <a href="tel:+919395191219">
                             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 70221 70619</p>
