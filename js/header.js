@@ -1,64 +1,83 @@
-const headerHTML = `<div class="border-bottom text-white py-2 pe-md-4 pe-3 px-3 top-navbar">
-        <div class="d-flex justify-content-between align-items-center gap-3">
-
-            <!-- Left Section -->
-            <div class="d-flex align-items-md-center gap-4 flex-md-row flex-column">
-                <a href="https://maps.app.goo.gl/LAhZpv8omu58pLy79" target="_blank"
-                    class="d-md-flex d-none align-items-center"><i
-                        class="fa fa-map-marker-alt me-3 text-primary fs-3"></i>
-                    <div class="text-decoration-underline"> #60C, 2nd Floor, KPHB Hyderabad-72</div>
-                </a>
-
-                <!-- Contact Number -->
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-phone-alt me-1 text-primary fs-4 me-2"></i>
-                    <div>
-                        <a class="d-flex align-items-center" href="tel:9395191219">
-                            <span class="fw-bold">+91 9395191219</span>
-                        </a>
-                        
-                    </div>
-                </div>
+const headerHTML = `
+<header>
+    <!-- Top Bar -->
+    <div class="bg-gray-100 text-sm py-2 px-4 md:flex hidden justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-1">
+                <a href="tel:9395191219" class="text-black hover:underline font-semibold"><i
+                        class="fas fa-phone pe-2"></i>+91 9395191219</a>
             </div>
-
-            <!-- Middle Section (Buttons with Blinking Text) -->
-            <div class="d-flex gap-3 justify-content-center align-items-center topbtn">
-                <a href="img/SAPFICOContent.pdf" class="btn btn-primary big-btn  fs-6" target="_blank" download>
-    Course Content
-</a>
-                <a href="https://youtu.be/ZRLNIkb8osc" class="btn btn-secondary big-btn  fs-6" target="_blank">Recorded Demo</a>
+            <div class="flex items-center space-x-1">
+                <a href="mailto:info@myerphub.com" class="text-black hover:underline font-semibold"><i
+                        class="fas fa-envelope pe-2"></i>info@myerphub.com</a>
             </div>
-
-            <!-- Right Section (Social Icons) -->
-            <div class="d-flex align-items-center">
-                <div class="d-flex gap-2 social-icons">
-                    <a href="https://www.youtube.com/@sapficohub" class=""><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/sapficotrainingandplacementinhyderabad" target="_blank" class=""><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/company/99382837/admin/dashboard/" target="_blank" class=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/sapfico_hub/" target="_blank" class=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
         </div>
-        
+        <div class="space-x-6">
+            <a href="./about.html" class="text-black hover:underline font-semibold">About Us</a>
+            <a href="tel:9395191219" class="text-black hover:underline font-semibold">Support</a>
+        </div>
     </div>
-<!-- Middle Section (Buttons with Blinking Text) -->
-            <div class=" gap-3 justify-content-center align-items-center topbtn1">
-                <a href="img/SAPFICOContent.pdf" style="font-size: 1rem !important;" class="btn btn-primary big-btn blink-text" target="_blank" download>
-    Download Course Content Here
-</a>
-                <a href="https://youtu.be/ZRLNIkb8osc" style="font-size: 1rem !important;" class="btn btn-secondary big-btn blink-text" target="_blank">Recorded Demo</a>
-            </div>
-    <!-- Floating Icons -->
-    <div class="floating-icons">
-        <!-- WhatsApp Icon -->
-        <a href="https://wa.me/9395191219" class="whatsapp-icon" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <!-- Call Icon -->
-        <a href="tel:9395191219" class="call-icon" aria-label="Call">
-            <i class="fas fa-phone-alt"></i>
-        </a>
-    </div>`;
 
-document.getElementById('topHeader').innerHTML = headerHTML;
+    <!-- Main Navbar -->
+    <div class="flex items-center justify-between md:px-4 max-sm:pe-4 py-2 border-b">
+        <!-- Logo -->
+        <a href="/">
+            <img src="./img/logo.png" alt="MyERP Hub Logo" class="h-16" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8 text-lg flex-wrap justify-center md:justify-start">
+            <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
+            <a href="https://www.google.com/maps/place/SAP+FICO+Training+%26+Placement/@17.4974233,78.3974909,841m/data=!3m1!1e3!4m8!3m7!1s0x3bcb91bf7409c79b:0x6273beac5f3270e9!8m2!3d17.4974233!4d78.3974909!9m1!1b1!16s%2Fg%2F11tcxl_mp_?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                target="_blank" class="hover:text-blue-600 font-semibold">Our Reviews</a>
+            <a href="./blogs.html" class="hover:text-blue-600 font-semibold">Blogs</a>
+            <a href="./contact.html" class="hover:text-blue-600 font-semibold">Contact Us</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Off-Canvas Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-800 bg-opacity-90 text-white hidden z-50">
+        <div class="absolute top-0 right-0 w-3/4 max-w-sm bg-white text-gray-800 h-full shadow-lg">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <nav class="flex flex-col space-y-6 mt-16 px-6">
+                <a href="./course.html" class="hover:text-blue-600 font-semibold">Courses</a>
+                <a href="https://www.google.com/maps/place/SAP+FICO+Training+%26+Placement/@17.4974233,78.3974909,841m/data=!3m1!1e3!4m8!3m7!1s0x3bcb91bf7409c79b:0x6273beac5f3270e9!8m2!3d17.4974233!4d78.3974909!9m1!1b1!16s%2Fg%2F11tcxl_mp_?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="hover:text-blue-600 font-semibold">Our Reviews</a>
+                <a href="./blogs.html" class="hover:text-blue-600 font-semibold">Blogs</a>
+                <a href="./contact.html" class="hover:text-blue-600 font-semibold">Contact Us</a>
+                <a href="./about.html" class="hover:text-blue-600 font-semibold">About Us</a>
+                <a href="tel:9395191219" class="hover:text-blue-600 font-semibold">Support</a>
+            </nav>
+        </div>
+    </div>
+</header>
+`;
+
+document.getElementById('header').innerHTML = headerHTML;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+
+    // Close menu when clicking outside
+    mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+});

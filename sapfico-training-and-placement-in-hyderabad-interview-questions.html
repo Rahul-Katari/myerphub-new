@@ -31,58 +31,25 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-  <!-- Spinner End -->
-
-
-  <!-- Navbar Start -->
-<div id="topHeader"></div>
-  <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0 px-md-0 px-3"
-        style="background: rgba(255, 255, 255, 0.83);">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-sm-4 px-lg-5">
-      <img src="./img/logo.png" alt="" class="h-100">
-    </a>
-    <button type="button" class="navbar-toggler me-sm-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto p-4 p-lg-0">
-        <a href="index.html" class="nav-item nav-link">Home</a>
-        <a href="advanced-sap-fico-training-hyderabad.html" class="nav-item nav-link">About Us</a>
-        <a href="courses.html" class="nav-item nav-link">Courses</a>
-        <a href="sap-training-and-placement-in-hyderabad-blogs.html" class="nav-item nav-link active">Blogs</a>
-        <a href="best-sap-training-institutes-with-placements-contactus.html" class="nav-item nav-link">Contact Us</a>
-      </div>
-      <a href="#contact-form-wrapper" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
-          class="fa fa-arrow-right ms-3"></i></a>
-    </div>
-  </nav>
-  <!-- Navbar End -->
-
+  <div id="header"></div>
 
   <!-- Header Start -->
-  <div class="container-fluid bg-primary py-1 mb-5 page-header">
-    <div class="container py-1">
+  <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-10 text-center">
-          <h1 class="display-5 text-white animated slideInDown">Interview Questions</h1>
+          <h1 class="display-5 text-white animated slideInDown">SAP FICO Interview Questions Guide</h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-
-              <li class="breadcrumb-item text-white active" aria-current="page"><a class="text-white" href="sap-training-and-placement-in-hyderabad-blogs.html">Blog</a></li>
-
+              <li class="breadcrumb-item"><a class="text-white" href="blogs.html">Blogs</a></li>
               <li class="breadcrumb-item text-white active" aria-current="page">Interview Questions</li>
-
             </ol>
           </nav>
         </div>
@@ -91,7 +58,7 @@
   </div>
   <!-- Header End -->
 
-  <div class="container blog-main">
+  <div class="container mx-auto max-w-7xl py-16">
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
@@ -947,7 +914,7 @@
   </div>
 
   <!-- Footer Start -->
-<footer id="footer"></footer>
+  <div id="footer" class="bg-gray-900"></div>
   <!-- Footer End -->
 
 
