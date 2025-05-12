@@ -120,10 +120,10 @@ const footerHTML = `<div class="max-w-7xl mx-auto">
                         <div>
                             <h4 class="text-lg font-semibold mb-6 text-white">Courses</h4>
                             <ul class="space-y-3">
-                                <li><a href="./course.html" class="text-gray-400 hover:text-white">SAP FICO</a></li>
-                                <li><a href="./course.html" class="text-gray-400 hover:text-white">SAP MM</a></li>
-                                <li><a href="./course.html" class="text-gray-400 hover:text-white">SAP SD</a></li>
-                                <li><a href="./course.html" class="text-gray-400 hover:text-white">SAP ABAP</a></li>
+                                <li><a href="./course.html#fico" class="text-gray-400 hover:text-white">SAP FICO</a></li>
+                                <li><a href="./course.html#mm" class="text-gray-400 hover:text-white">SAP MM</a></li>
+                                <li><a href="./course.html#sd" class="text-gray-400 hover:text-white">SAP SD</a></li>
+                                <li><a href="./course.html#abap" class="text-gray-400 hover:text-white">SAP ABAP</a></li>
                             </ul>
                         </div>
 
