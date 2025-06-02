@@ -21,7 +21,7 @@ const footerHTML = `<div class="max-w-7xl mx-auto">
             <div>
                 <div class="mx-auto px-4 md:px-5 text-white pt-5 animate-fadeIn">
                     <div class="py-5">
-                        <div class="grid md:grid-cols-3 gap-5 space-y-5 md:space-y-0">
+                        <div class="grid md:grid-cols-4 gap-3 space-y-5 md:space-y-0">
                             <!-- USA -->
                             <div
                                 class="shadow-xl rounded-xl bg-gradient-to-br from-gray-800 to-gray-700 p-4 h-full flex flex-col justify-between">
@@ -73,10 +73,27 @@ const footerHTML = `<div class="max-w-7xl mx-auto">
                                 <p class="text-sm mb-2 flex items-center"><i
                                         class="fa fa-map-marker-alt mr-3"></i>Masjid
                                     Bldg, Begur Mn Rd, Bommanahalli-560068</p>
-                                <a href="tel:+919395191219" class="block mb-2 text-sm"><i
+                                <a href="tel:+917022170619" class="block mb-2 text-sm"><i
                                         class="fa fa-phone-alt mr-3"></i>+91
                                     70221
                                     70619</a>
+                                <a href="mailto:info@myerphub.com" class="block mb-2 text-sm"><i
+                                        class="fa fa-envelope mr-3"></i>info@myerphub.com</a>
+                            </div>
+
+                            <!-- Vizag -->
+                            <div
+                                class="shadow-xl rounded-xl bg-gradient-to-br from-gray-800 to-gray-700 p-4 h-full flex flex-col justify-between">
+                                <h1 class="text-white mb-2 flex items-center text-2xl md:text-2xl">
+                                    Vizag
+                                    <img src="./img/footer/vizag.jpg" alt="Bengaluru"
+                                        class="ms-5 size-20 object-cover rounded-full ml-4" />
+                                </h1>
+                                <p class="text-sm mb-2 flex items-center"><i
+                                        class="fa fa-map-marker-alt mr-3"></i>GF-2, 48-3-66, Sriram Sadan, Near RTC Complex, Gurudwara Road, Srinagar - 530013</p>
+                                <a href="tel:+91 96768 91219" class="block mb-2 text-sm"><i
+                                        class="fa fa-phone-alt mr-3"></i>+91
+                                    96768 91219</a>
                                 <a href="mailto:info@myerphub.com" class="block mb-2 text-sm"><i
                                         class="fa fa-envelope mr-3"></i>info@myerphub.com</a>
                             </div>
